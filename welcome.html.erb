@@ -1,0 +1,54 @@
+<section class="flex pt-150">
+
+  <div  class="flex-col p-small w-quart pt-10 pr-20 border-right grey">
+
+    <strong>Your current version of <span class="text-red">ruby</span> is <%= RUBY_VERSION %>.</strong>
+    <span class="mt-10">to update it run the following commands :</span>
+    <ul>
+      <li class="pad-grey mb-05">rbenv install -l</li>
+      <li class="pad-grey mb-05">rbenv install [VERSION]</li>
+      <p># if you want to set only the application Ruby version</p>
+      <li class="pad-grey mb-05">rbenv local [VERSION]</li>
+      <p># if you want to set the global version of Ruby to be used in all shells</p>
+      <li class="pad-grey mb-05">rbenv global [VERSION]</li>
+      <li class="pad-grey mb-05">bundle install</li>
+    </ul>
+
+    <strong>Your current version of <span class="text-red">Rails</span> is <%= Rails.version %></strong>
+    <span class="mt-10">to update it :</span>
+    <ul>
+      <li class="mb-05"># if you want to set only the application Rails version, open your <span class="pad-grey">Gemfile.rb</span> and copy <span class="pad-red">gem 'rails', '~> [VERSION]'</span></li>
+      <li class="pad-grey mt-05 mb-05">bundle install</li>
+      <li class="mb-05"># if you want to set the global version of Rails to be used in all shells, in your terminal run the command <span class="pad-grey">cd</span> then run <span class="pad-grey">gem install rails -v [VERSION]</span>. Then update the application Rails version locally as point at above.</li>
+    </ul>
+
+  </div>
+
+  <div class="flex-col-bet m-0-auto p-10">
+
+    <div class="flex-col-cent-start">
+      <h1 class="m-0 mb-20">WELCOME on Rails</h1>
+
+      <p class="p-small">This Rails app was generated with <%= link_to "ubi-legal-innovation-team/templates", "https://gitlab-ncsa.ubisoft.org/adhuy/templates/-/raw/master/default.rb", target: "_blank", class: "text-underline" %>, created by the <%= link_to "Legal Innovation team", "https://www.legallab.ubisoft.org/crew", target:"_blank", class: "text-blue" %>.</p>
+
+      <p>Below is the list of default configuration files from the generated template :</p>
+
+      <ul>
+        <li class="mb-10">the main <a class="text-blue" target="_blank" href="https://gitlab-ncsa.ubisoft.org/adhuy/templates/-/raw/master/default.rb">config file</a></li>
+
+        <li><%= link_to "rails stylesheets", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-stylesheets", target:"_blank", class: "text-blue" %></li>
+        <li><%= link_to "rails javascripts", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-javascripts", target:"_blank", class: "text-blue" %></li>
+        <li><%= link_to "ubisoft fonts", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-fonts", target:"_blank", class: "text-blue" %></li>
+        <li><%= link_to "ubisoft images", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-images", target:"_blank", class: "text-blue" %></li>
+        <li><%= link_to "rails pages", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-pages", target:"_blank", class: "text-blue" %></li>
+        <li><%= link_to "rails partials", "https://gitlab-ncsa.ubisoft.org/adhuy/rails-partials", target:"_blank", class: "text-blue" %></li>
+      </ul>
+    </div>
+
+    <div class="text-right">
+      <%= link_to "start coding", home_path, class: "border-black p-10 radius-05" %>
+    </div>
+
+  </div>
+
+</section>
