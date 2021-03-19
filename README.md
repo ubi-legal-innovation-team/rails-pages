@@ -11,8 +11,8 @@ Replace Rails' pages by Ubi Innovation Team's default pages:
 ```
 rm app/views/pages/home.html.erb
 rm app/views/pages/welcome.html.erb
-curl -L https://gitlab-ncsa.ubisoft.org/adhuy/rails-pages/-/raw/master/home.html.erb > app/views/pages/home.html.erb
-curl -L https://gitlab-ncsa.ubisoft.org/adhuy/rails-pages/-/raw/master/welcome.html.erb > app/views/pages/welcome.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/home.html.erb > app/views/pages/home.html.erb
+curl -L https://raw.githubusercontent.com/ubi-legal-innovation-team/rails-pages/master/welcome.html.erb > app/views/pages/welcome.html.erb
 ```
 
 
