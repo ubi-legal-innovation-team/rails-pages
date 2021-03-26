@@ -1,31 +1,30 @@
 <section class="flex pt-150">
 
-  <div  class="flex-col p-small w-quart pt-10 pr-20 border-right grey">
+  <div  class="flex-col p-small w-quart pt-10 pr-20 scrollable h-500">
 
     <strong>Versions management</strong>
 
-    <ul>
-      <li class="mb-05">v1.0.0 : first launch and deployment on [SERVICE] [(MM, YYYY)]</li>
-    </ul>
-
     <strong>Your current version of <span class="text-red">ruby</span> is <%= RUBY_VERSION %>.</strong>
-    <span class="mt-10">to update it run the following commands :</span>
-    <ul>
-      <li class="pad-grey mb-05">rbenv install -l</li>
-      <li class="pad-grey mb-05">rbenv install [VERSION]</li>
+    <span class="mt-10">to update it run the following in your terminal :</span>
+    <ul class="border-bottom light-grey pb-15">
+      <li class="pad-grey mb-10">rbenv install -l</li>
+      <li class="pad-grey mb-10">rbenv install [VERSION]</li>
       <p># if you want to set only the application Ruby version</p>
-      <li class="pad-grey mb-05">rbenv local [VERSION]</li>
+      <li class="pad-grey mb-10">rbenv local [VERSION]</li>
       <p># if you want to set the global version of Ruby to be used in all shells</p>
-      <li class="pad-grey mb-05">rbenv global [VERSION]</li>
-      <li class="pad-grey mb-05">bundle install</li>
+      <li class="pad-grey mb-10">rbenv global [VERSION]</li>
+      <p># in both case run the following :</p>
+      <li class="mb-10">open your <span class="pad-grey">.ruby_version.rb</span> and change the current version with the new one</li>
+      <li class="mb-10">open your <span class="pad-grey">Gemfile.rb</span> and change again the current version with the new one</li>
+      <li>run <span class="pad-grey">bundle install</span> in your terminal</li>
     </ul>
 
     <strong>Your current version of <span class="text-red">Rails</span> is <%= Rails.version %></strong>
     <span class="mt-10">to update it :</span>
-    <ul>
-      <li class="mb-05"># if you want to set only the application Rails version, open your <span class="pad-grey">Gemfile.rb</span> and copy <span class="pad-red">gem 'rails', '~> [VERSION]'</span></li>
-      <li class="pad-grey mt-05 mb-05">bundle install</li>
-      <li class="mb-05"># if you want to set the global version of Rails to be used in all shells, in your terminal run the command <span class="pad-grey">cd</span> then run <span class="pad-grey">gem install rails -v [VERSION]</span>. Then update the application Rails version locally as point at above.</li>
+    <ul class="border-bottom light-grey pb-15">
+      <li class="mb-10"># if you want to set only the application Rails version, open your <span class="pad-grey">Gemfile.rb</span> and copy <span class="pad-red">gem 'rails', '~> [VERSION]'</span></li>
+      <li class="mb-10 mt-10">run <span class="pad-grey">bundle install</span> in your terminal</li>
+      <li># if you want to set the global version of Rails to be used in all shells, in your terminal run the command <span class="pad-grey">cd</span> then run <span class="pad-grey">gem install rails -v [VERSION]</span>. Then update the application Rails version locally as point at above.</li>
     </ul>
 
   </div>
