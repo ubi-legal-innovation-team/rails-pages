@@ -1,69 +1,58 @@
-<section id="welcome" class="flex pt-200">
+<section id="welcome">
 
-  <div  class="flex-col p-small w-quart pt-10 pr-20 scrollable h-500">
+  <div class="soft-ml-box-shadow flex-col-cent w-max pb-25">
 
-    <strong>Versions management</strong>
+    <div class="w-max text-cent background-magic-grey p-10 mb-100">
+      <%= image_tag 'partners/Ruby_on_Rails-logo.png', width: "40px" %>
+      <h1 class="m-0">Welcome on Rails <%= current_user.first_name %></h1>
+    </div>
 
-    <ul class="border-bottom light-grey pb-15">
-      <li><u>v1.0.0</u> : XXX <span class="text-grey">(<%= Date.today.strftime("%B") %>, <%= Date.today.year %>)</span></li>
-    </ul>
+    <div class="w-600 text-cent mb-50 p-10">
+      <%= svg('ubisoft_gear_30') %>
+      <h3>Configuration files</h3>
 
-    <strong>Your current version of <span class="text-red">ruby</span> is <%= RUBY_VERSION %>.</strong>
+      <p class="p-rp-small">
+        This Rails app was generated with <%= link_to "ubi-legal-innovation-team/templates", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target: "_blank", class: "text-underline" %>, created by the <%= link_to "Legal Innovation team", "https://www.legallab.ubisoft.org/crew", target:"_blank", class: "text-underline" %> and server-side administrated by <%= link_to "Steven Pojer", "https://profile.ubisoft.org/#/u/spojer?autocompletion=true", target:"_blank", class: "text-underline" %>.
+      </p>
 
-    <span class="mt-10">to update it run the following in your terminal :</span>
-
-    <ul class="border-bottom light-grey pb-15">
-      <li class="pad-grey mb-10">rbenv install -l</li>
-      <li class="pad-grey mb-10">rbenv install [VERSION]</li>
-      <p># if you want to set only the application Ruby version</p>
-      <li class="pad-grey mb-10">rbenv local [VERSION]</li>
-      <p># if you want to set the global version of Ruby to be used in all shells</p>
-      <li class="pad-grey mb-10">rbenv global [VERSION]</li>
-      <p># in both case run the following :</p>
-      <li class="mb-10">open your <span class="pad-grey">.ruby_version.rb</span> and change the current version with the new one</li>
-      <li class="mb-10">open your <span class="pad-grey">Gemfile.rb</span> and change again the current version with the new one</li>
-      <li>run <span class="pad-grey">bundle install</span> in your terminal</li>
-    </ul>
-
-    <strong>Your current version of <span class="text-red">Rails</span> is <%= Rails.version %></strong>
-
-    <span class="mt-10">to update it :</span>
-
-    <ul class="border-bottom light-grey pb-15">
-      <li class="mb-10"># if you want to set only the application Rails version, open your <span class="pad-grey">Gemfile.rb</span> and copy <span class="pad-red">gem 'rails', '~> [VERSION]'</span></li>
-      <li class="mb-10 mt-10">run <span class="pad-grey">bundle install</span> in your terminal</li>
-      <li># if you want to set the global version of Rails to be used in all shells, in your terminal run the command <span class="pad-grey">cd</span> then run <span class="pad-grey">gem install rails -v [VERSION]</span>. Then update the application Rails version locally as point at above.</li>
-    </ul>
-
-  </div>
-
-  <div class="flex-col-bet m-0-auto p-10">
-
-    <div class="flex-col-cent-start">
-
-      <%= image_tag 'partners/Ruby_on_Rails-logo.png', width: "50px" %>
-      <h1>WELCOME on Rails</h1>
-
-      <p class="p-small">This Rails app was generated with <%= link_to "ubi-legal-innovation-team/templates", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target: "_blank", class: "text-underline" %>, created by the <%= link_to "Legal Innovation team", "https://www.legallab.ubisoft.org/crew", target:"_blank", class: "text-blue" %>.</p>
-
-      <p>Below is the list of the default configuration files from the generated template :</p>
-
-      <ul>
-        <li class="mb-10"><%= link_to "rails config file", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target:"_blank", class: "text-electric-blue" %>
-        <li class="mb-10"><%= link_to "rails stylesheets", "https://github.com/ubi-legal-innovation-team/rails-stylesheets", target:"_blank", class: "text-blue" %></li>
-        <li class="mb-10"><%= link_to "rails javascripts", "https://github.com/ubi-legal-innovation-team/rails-javascripts", target:"_blank", class: "text-blue" %></li>
-        <li class="mb-10"><%= link_to "ubisoft fonts", "https://github.com/ubi-legal-innovation-team/rails-fonts", target:"_blank", class: "text-blue" %></li>
-        <li class="mb-10"><%= link_to "ubisoft images", "https://github.com/ubi-legal-innovation-team/rails-images", target:"_blank", class: "text-blue" %></li>
-        <li class="mb-10"><%= link_to "rails pages", "https://github.com/ubi-legal-innovation-team/rails-pages", target:"_blank", class: "text-blue" %></li>
-        <li class="mb-10"><%= link_to "rails partials", "https://github.com/ubi-legal-innovation-team/rails-partials", target:"_blank", class: "text-blue" %></li>
+      <ul class="no-padding unstyle-list">
+        <li class="border-black background-magic-grey p-10 mb-10"><%= link_to "rails template", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target:"_blank" %></li>
+        <li class="border-black p-10 mb-10"><%= link_to "rails stylesheets", "https://github.com/ubi-legal-innovation-team/rails-stylesheets", target:"_blank" %></li>
+        <li class="border-black p-10 mb-10"><%= link_to "rails javascripts", "https://github.com/ubi-legal-innovation-team/rails-javascripts", target:"_blank" %></li>
+        <li class="border-black p-10 mb-10"><%= link_to "ubisoft fonts", "https://github.com/ubi-legal-innovation-team/rails-fonts", target:"_blank" %></li>
+        <li class="border-black p-10 mb-10"><%= link_to "ubisoft images", "https://github.com/ubi-legal-innovation-team/rails-images", target:"_blank" %></li>
+        <li class="border-black p-10 mb-10"><%= link_to "rails pages", "https://github.com/ubi-legal-innovation-team/rails-pages", target:"_blank" %></li>
+        <li class="border-black p-10"><%= link_to "rails partials", "https://github.com/ubi-legal-innovation-team/rails-partials", target:"_blank" %></li>
       </ul>
-
     </div>
 
-    <div class="text-right">
-      <%= link_to "start on Rails", home_path, class: "border-black p-10 radius-05" %>
+    <div class="w-600 text-cent mb-50 p-10">
+      <%= svg('ubisoft_rocket_30') %>
+      <h3>Versions management (v.2.3.0)</h3>
+
+      <ul class="no-padding unstyle-list p-rp-small">
+        <li class="mb-10"><u>v1.0.0</u> : first launch and deployment on Heroku <span class="text-grey">(Mar, 2020)</span></li>
+        <li class="mb-10"><u>v1.1.0</u> : contest & sweepstake automation tool addition <span class="text-grey">(Apr, 2020)</span></li>
+        <li class="mb-10"><u>v1.2.0</u> : release form automation tool addition <span class="text-grey">(Nov, 2020)</span></li>
+        <li class="mb-10"><u>v1.3.0</u> : privacy notice automation tool addition <span class="text-grey">(Jan, 2021)</span></li>
+        <li class="mb-10"><u>v1.4.0</u> : SOW automation tool addition <span class="text-grey">(Fev, 2021)</span></li>
+        <li class="mb-10"><u>v1.4.1</u> : security and risk management updates <span class="text-grey">(Fev, 2021)</span></li>
+        <li class="mb-10"><u>v2.0.0</u> : new template and prod. config. for Docker <span class="text-grey">(Mar - Apr, 2021)</span></li>
+        <li class="mb-10"><u>v2.1.0</u> : add Active Directory Authentication <span class="text-grey">(May, 2021)</span></li>
+        <li class="mb-10"><u>v2.2.0</u> : add backup script <span class="text-grey">(May, 2021)</span></li>
+        <li class="mb-10"><u>v2.2.1</u> : fix small bugs post launch <span class="text-grey">(May, 2021)</span></li>
+        <li><u>v2.3.0</u> : add SMTP protocol <span class="text-grey">(July, 2021)</span></li>
+      </ul>
     </div>
 
+    <div class="w-600 text-cent mb-100 p-10">
+      <%= svg('ubisoft_home_30') %>
+      <h3>Current application</h3>
+      <p class="p-rp-small">The current version of <span class="text-red">ruby</span> is <%= RUBY_VERSION %>.</p>
+      <p class="p-rp-small">The current version of <span class="text-red">Rails</span> is <%= Rails.version %></p>
+    </div>
+
+    <%= link_to "E N T E R", home_path, class: "e-blue-btn small" %>
   </div>
 
 </section>
