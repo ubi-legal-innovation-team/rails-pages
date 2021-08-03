@@ -1,51 +1,31 @@
 <section id="welcome">
 
-  <div class="soft-ml-box-shadow flex-col-cent w-max pb-25">
+  <div class="soft-ml-box-shadow flex-col-cent w-max pb-25 text-cent">
 
-    <div class="w-max text-cent background-magic-grey p-10 mb-100">
+    <div class="w-max background-magic-grey p-10 mb-100">
       <%= image_tag 'partners/Ruby_on_Rails-logo.png', width: "40px" %>
       <h1 class="m-0">Welcome on Rails <%= current_user.first_name %></h1>
     </div>
 
-    <div class="w-600 text-cent mb-50 p-10">
+    <div class="w-600 mb-50 p-10">
       <%= svg('ubisoft_gear_30') %>
       <h3>Configuration files</h3>
 
       <p class="p-rp-small">
         This Rails app was generated with <%= link_to "ubi-legal-innovation-team/templates", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target: "_blank", class: "text-underline" %>, created by the <%= link_to "Legal Innovation team", "https://www.legallab.ubisoft.org/crew", target:"_blank", class: "text-underline" %> and server-side administrated by <%= link_to "Steven Pojer", "https://profile.ubisoft.org/#/u/spojer?autocompletion=true", target:"_blank", class: "text-underline" %>.
       </p>
-
-      <ul class="no-padding unstyle-list">
-        <li class="border-black background-magic-grey p-10 mb-10"><%= link_to "rails template", "https://github.com/ubi-legal-innovation-team/templates/blob/master/default.rb", target:"_blank" %></li>
-        <li class="border-black p-10 mb-10"><%= link_to "rails stylesheets", "https://github.com/ubi-legal-innovation-team/rails-stylesheets", target:"_blank" %></li>
-        <li class="border-black p-10 mb-10"><%= link_to "rails javascripts", "https://github.com/ubi-legal-innovation-team/rails-javascripts", target:"_blank" %></li>
-        <li class="border-black p-10 mb-10"><%= link_to "ubisoft fonts", "https://github.com/ubi-legal-innovation-team/rails-fonts", target:"_blank" %></li>
-        <li class="border-black p-10 mb-10"><%= link_to "ubisoft images", "https://github.com/ubi-legal-innovation-team/rails-images", target:"_blank" %></li>
-        <li class="border-black p-10 mb-10"><%= link_to "rails pages", "https://github.com/ubi-legal-innovation-team/rails-pages", target:"_blank" %></li>
-        <li class="border-black p-10"><%= link_to "rails partials", "https://github.com/ubi-legal-innovation-team/rails-partials", target:"_blank" %></li>
-      </ul>
     </div>
 
-    <div class="w-600 text-cent mb-50 p-10">
+    <div class="w-600 mb-50 p-10">
       <%= svg('ubisoft_rocket_30') %>
       <h3>Versions management (v.2.3.0)</h3>
 
-      <ul class="no-padding unstyle-list p-rp-small">
-        <li class="mb-10"><u>v1.0.0</u> : first launch and deployment on Heroku <span class="text-grey">(Mar, 2020)</span></li>
-        <li class="mb-10"><u>v1.1.0</u> : contest & sweepstake automation tool addition <span class="text-grey">(Apr, 2020)</span></li>
-        <li class="mb-10"><u>v1.2.0</u> : release form automation tool addition <span class="text-grey">(Nov, 2020)</span></li>
-        <li class="mb-10"><u>v1.3.0</u> : privacy notice automation tool addition <span class="text-grey">(Jan, 2021)</span></li>
-        <li class="mb-10"><u>v1.4.0</u> : SOW automation tool addition <span class="text-grey">(Fev, 2021)</span></li>
-        <li class="mb-10"><u>v1.4.1</u> : security and risk management updates <span class="text-grey">(Fev, 2021)</span></li>
-        <li class="mb-10"><u>v2.0.0</u> : new template and prod. config. for Docker <span class="text-grey">(Mar - Apr, 2021)</span></li>
-        <li class="mb-10"><u>v2.1.0</u> : add Active Directory Authentication <span class="text-grey">(May, 2021)</span></li>
-        <li class="mb-10"><u>v2.2.0</u> : add backup script <span class="text-grey">(May, 2021)</span></li>
-        <li class="mb-10"><u>v2.2.1</u> : fix small bugs post launch <span class="text-grey">(May, 2021)</span></li>
-        <li><u>v2.3.0</u> : add SMTP protocol <span class="text-grey">(July, 2021)</span></li>
+      <ul class="no-padding unstyle-list p-rp-small text-left">
+        <li class="mb-05"><u>v1.0.0</u> : ... <span class="text-grey">(MM, YYYY)</span></li>
       </ul>
     </div>
 
-    <div class="w-600 text-cent mb-100 p-10">
+    <div class="w-600 mb-100 p-10">
       <%= svg('ubisoft_home_30') %>
       <h3>Current application</h3>
       <p class="p-rp-small">The current version of <span class="text-red">ruby</span> is <%= RUBY_VERSION %>.</p>
